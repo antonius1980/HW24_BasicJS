@@ -1,7 +1,8 @@
 'use strict';
 
 //Start Declaring Variables
-const CURRENT_YEAR = "2025";
+let today = new Date();
+const CURRENT_YEAR = today.getFullYear();
 let fullName;
 let firstName;
 let lastName;
@@ -48,3 +49,10 @@ if (isYouWantAnswer) {
 }
 else alert('Anyway, I will answer. Your square area is ' + squareArea);
 alert('Hooray!');
+
+alert('Let\'s continue!');
+
+circleRadius = +prompt("What is your hypothetical circle radius?", 10);
+let circleArea = Math.PI * Math.pow(circleRadius, 2);
+// alert(`Math.PI = ${Math.pow(circleRadius, 2)}`);
+alert(`Your circle area = ${circleArea}`);
